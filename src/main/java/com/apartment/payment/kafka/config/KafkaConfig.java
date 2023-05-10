@@ -20,7 +20,7 @@ public class KafkaConfig {
 
 
     @Bean
-    private KafkaTemplate<String,String> kafkaTemplate() {
+    public KafkaTemplate<String,String> kafkaTemplate() {
         return new KafkaTemplate<>(producerFactory());
     }
 
